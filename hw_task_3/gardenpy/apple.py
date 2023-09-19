@@ -16,17 +16,17 @@ class Apple:
         else: return False
 
 
-     
-apple = Apple(1)
-print(apple.stage)
-apple.grow()
-print(apple.stage)
-print(apple.isRed())
-apple.grow()
-print(apple.stage)
-apple.grow()
-print(apple.stage)
-print(apple.isRed())
+if __name__ == "__main__":
+    apple = Apple(1)
+    print(apple.stage)
+    apple.grow()
+    print(apple.stage)
+    print(apple.isRed())
+    apple.grow()
+    print(apple.stage)
+    apple.grow()
+    print(apple.stage)
+    print(apple.isRed())
 
 
 
