@@ -3,7 +3,7 @@ import numpy as np
 import string as s
 
 # Exersize 1
-mat = np.random.randint(1,10,size=(10,10))
+mat = np.random.randint(5,10,size=(10,10))
 df = pd.DataFrame(mat)
 print(df)
 print(mat)
@@ -13,5 +13,5 @@ new_index = dict(map(lambda i,j: (i,j), df.index.values, list(s.ascii_lowercase)
 df.rename(new_index, inplace=True)
 print(df)
 print('\n\n\n')
-print(df[df.columns > 5])
+print(df.loc[(df > 5).all(axis=1)] )
 
